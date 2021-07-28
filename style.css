@@ -1,0 +1,183 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html, body {
+    background-color: #C3D4DB;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.container {
+    margin-left: 22.5vw;
+    margin-top: 17.5vh;
+    height: 65vh;
+    width: 55vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "part1 part1" "part2 part3";
+}
+
+.part1 {
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    grid-area: part1;
+}
+
+.part2 {
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 10px;
+    grid-area: part2;
+}
+
+.part3 {
+    background-color: hsl(179, 62%, 60%);
+    border-bottom-right-radius: 10px;
+    grid-area: part3;
+}
+
+#join {
+    color: hsl(179, 62%, 43%);
+    font-family: 'Karla', sans-serif;
+    font-size: 1.75rem;
+    margin: 2rem;
+    font-weight: 700;
+}
+
+#day {
+    color: hsl(71, 73%, 54%);
+    font-family: 'Karla', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2rem 2rem 0rem 2rem;
+}
+
+#gain {
+    color: hsl(218, 22%, 67%);
+    font-family: 'Karla', sans-serif;
+    font-size: 1.2rem;
+    margin: 1rem 2rem 1rem 2rem;
+}
+
+.part3 p {
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.75rem;
+    margin: 2rem 2rem 0rem 2rem;
+    font-weight: 700;
+}
+
+.part3 ul {
+    list-style: none;
+    margin: 1rem 2rem 1rem 2rem;
+}
+
+.part3 ul li {
+    color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    font-size: 1.05rem;
+}
+
+#month {
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.5rem;
+    margin: 2rem 2rem 0rem 2rem;
+    font-weight: 700;
+}
+
+#rate {
+    color: hsl(204, 43%, 85%);
+    font-family: 'Karla', sans-serif;
+    font-size: 1.5rem;
+    margin: 1rem 2rem 0rem 2rem;
+}
+
+#rate span {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#access {
+    color: white;
+    font-size: 1.30rem;
+    font-family: 'Karla', sans-serif;
+    margin: 1rem 2rem 0rem 2rem;
+}
+
+button {
+    width: 70%;
+    height: 3rem;
+    margin: 1rem 15%;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+    body {
+        overflow: scroll;
+    }
+    .container {
+        margin-left: 15vw;
+        margin-top: 5vh;
+        height: 90vh;
+        width: 70vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "part1" "part2" "part3";
+    }
+    .part2 {
+        border-bottom-left-radius: 0px;
+    }
+    .part3 {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #join {
+        font-size: 1.25rem;
+    }
+    #day {
+        font-size: 1.1rem;
+    }
+    #gain {
+        font-size: .90rem;
+    }
+    .part3 p {
+        font-size: 1.25rem;
+    }
+    
+    .part3 ul li {
+        font-size: 0.90rem;
+    }
+    
+    #month {
+        font-size: 1.15rem;
+    }
+    
+    #rate {
+        font-size: 1.05rem;
+    }
+    
+    #rate span {
+        font-size: 1.60rem;
+    }
+    
+    #access {
+        font-size: .90rem;
+    }
+    
+    button {
+        font-size: .90rem;
+    }
+} 
